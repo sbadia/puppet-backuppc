@@ -18,6 +18,7 @@ import 'mysql.pp'
 class backuppc(
   $backuppc_pubkey  = 'puppet://puppetmaster.foobar.com/keys/backuppc.pub',
   $backuppc_privkey = 'puppet://puppetmaster.foobar.com/keys/backuppc.priv',
+  $backuppc_server  = 'backuppc.foobar.com',
   ) {
 
 } # Class:: backuppc
