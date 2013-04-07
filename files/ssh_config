@@ -1,0 +1,14 @@
+Host *
+  Port 22
+  IdentityFile ~/.ssh/id_rsa
+  ChallengeResponseAuthentication no
+  PasswordAuthentication no
+  StrictHostKeyChecking no
+  UserKnownHostsFile /dev/null
+  PreferredAuthentications publickey
+  KbdInteractiveDevices no
+  ForwardAgent no
+  ForwardX11 no
+  ConnectTimeout 10
+  Ciphers blowfish-cbc
+  Compression no
