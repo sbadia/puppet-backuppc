@@ -6,10 +6,10 @@
 # Maintainer:: Sebastien Badia (<seb@sebian.fr>)
 #
 
-# Class:: backuppc::server
+# Class:: backuppc::server inherits backuppc
 #
 #
-class backuppc::server {
+class backuppc::server inherits backuppc {
   package {
     ['backuppc','libfile-rsyncp-perl','rsync']:
       ensure  => installed,
@@ -106,4 +106,4 @@ class backuppc::server {
   Line <<| tag == 'backuppc_client' |>>
   Line <<| tag == 'backup_custom' |>>
   Line <<| tag == 'backup_mysql' |>>
-} # Class:: backuppc::server
+} # Class:: backuppc::server inherits backuppc
